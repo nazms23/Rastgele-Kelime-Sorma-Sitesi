@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Kelime Sorma Sitesi</title>
+
+    
+</head>
+<body>
+    <div id="kelimegir">
+        <h1>Kelimeler (aralarına "," koyunuz)</h1>
+        <textarea name="" id="kelime" cols="30" rows="10" ></textarea>
+        <h1>Anlamları (aralarına "," koyunuz)</h1>
+        <textarea name="" id="anlam" cols="30" rows="10"></textarea>
+        <button onclick="kelimeonay()">Onayla</button>
+    </div>
+    
+    <div style="margin: auto; margin-top: 200px; display: none; width: 400px;" id="cevaplamakismidiv">
+        <h1 style="margin: auto; width: 200px;">Puan : <span id="puantext">0</span></h1>
+        <br>
+        <h1>Kelime :</h1> <h2 id="kelimetext"></h2>
+        <input type="text" name="" id="kelimeanlaminput">
+        <br>
+        <p id="bildiri">Bildiri</p>
+        <br>
+        <button onclick="cevapla()">Cevapla</button>
+        <button onclick="sonraki()">Sonraki</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
